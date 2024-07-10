@@ -1,0 +1,99 @@
+.Home {
+  display: flex;
+  width: 100%;
+
+  .searchVideos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .nav {
+      width: 100%;
+      height: 30px;
+      padding: 10px 30px 30px 10px;
+      margin-bottom: 10px;
+      .buttons {
+        width: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 100%;
+
+        button {
+          width: 70px;
+          height: 30px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 1.2rem;
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .searchVideo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      .image {
+        padding: 10px;
+        max-width: 70%;
+        img {
+          width: 100%;
+          border-radius: 10px;
+
+          & &:hover {
+            border-radius: 0;
+          }
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        h2 {
+          color: rgba(255, 255, 255, 0.891);
+        }
+        p {
+          color: rgba(255, 255, 255, 0.601);
+        }
+        .channel {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+          }
+          .channelName {
+            text-decoration: none;
+          }
+          p {
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: rgba(217, 213, 213, 0.635);
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

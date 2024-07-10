@@ -1,0 +1,550 @@
+.Video {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  .video-section {
+    padding: 15px 15px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+    }
+    h2 {
+      margin-top: 10px;
+    }
+    .info {
+      display: flex;
+      margin-top: 30px;
+      align-items: center;
+      justify-content: space-evenly;
+      .space {
+        width: 40%;
+      }
+      .video-info {
+        p {
+          color: rgba(214, 212, 212, 0.737);
+          font-size: 1.2rem;
+        }
+      }
+      .icons-section {
+        display: flex;
+        gap: 20px;
+        .likes-icons {
+          width: 130px;
+          padding: 8px;
+          border-radius: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(94, 86, 86, 0.54);
+          gap: 40px;
+          &:hover {
+            background-color: rgba(162, 160, 160, 0.54);
+          }
+          .icon {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            color: white;
+            margin-left: -20px;
+            gap: 3px;
+
+            img {
+              filter: invert(100%);
+            }
+          }
+          .line {
+            width: 1px;
+            height: 25px;
+            position: absolute;
+            margin-bottom: 4rem;
+          }
+        }
+        .icon {
+          &.share,
+          &.save {
+            width: 80px;
+            padding: 5px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(94, 86, 86, 0.54);
+            &:hover {
+              background-color: rgba(162, 160, 160, 0.54);
+            }
+          }
+
+          img {
+            width: 23px;
+            height: 23px;
+            filter: invert(100px);
+            color: white;
+          }
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .line {
+      margin: 15px 0 10px 0;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(185, 172, 172, 0.753);
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .channel-info {
+      width: 100%;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      .channel-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          margin-top: 15px;
+          align-self: center;
+        }
+        .channel-name {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          .channel-link {
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+            h2 {
+              color: rgba(255, 255, 255, 0.901);
+              width: 250px;
+            }
+          }
+
+          p {
+            color: rgba(255, 255, 255, 0.67);
+          }
+        }
+      }
+      .space {
+        width: 80%;
+      }
+      .subs-btn {
+        padding: 30px;
+
+        button {
+          padding: 10px 30px;
+          background-color: red;
+          border: none;
+          outline: none;
+          border-radius: 10px;
+          font-size: 1.1rem;
+          font-weight: 800;
+          cursor: pointer;
+        }
+      }
+    }
+    .description {
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(143, 140, 140, 0.402);
+      color: white;
+      border-radius: 20px;
+    }
+
+    .comment-section {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: rgba(236, 230, 230, 0.859);
+      }
+
+      .comments {
+        width: 100%;
+        margin-top: 10px;
+        height: 100px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .comments-owner {
+          width: 50%;
+          height: 30%;
+          display: flex;
+          gap: 5px;
+
+          .owner-pic {
+            img {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+          }
+
+          .owner-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          }
+        }
+      }
+      .icons {
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+
+        .icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .line {
+      margin-top: 4rem;
+    }
+  }
+}
+@media (min-width: 100px) and (max-width: 500px) {
+  .Video {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .video-section {
+      width: 100vw;
+      padding: 10px 4px;
+      iframe {
+        width: 100%;
+        height: 30vh;
+        border-radius: 5px;
+      }
+      h2 {
+        font-size: 1.2rem;
+        padding: 2px;
+      }
+      .info {
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-around;
+        .space {
+          width: 0;
+        }
+        .video-info {
+          p {
+            font-size: 0.9rem;
+          }
+        }
+        .icons-section {
+          gap: 5px;
+          .likes-icons {
+            width: 80px;
+            height: 30px;
+            gap: 15px;
+            .icon {
+              gap: 0;
+              margin-left: 0;
+              align-items: flex-end;
+              justify-content: center;
+
+              img {
+                width: 15px;
+                height: 15px;
+              }
+              p {
+                font-size: 0.9rem;
+              }
+            }
+            .line {
+              margin: 0 0 0 1rem;
+              height: 20px;
+            }
+          }
+          .icon {
+            &.share,
+            &.save {
+              width: 60px;
+              img {
+                width: 15px;
+                height: 15px;
+              }
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .channel-info {
+        align-items: center;
+        justify-content: space-evenly;
+
+        .space {
+          width: 0;
+        }
+        .subs-btn {
+          padding: 0;
+          margin-left: -3rem;
+          button {
+            padding: 8px 10px;
+            font-size: 1rem;
+          }
+        }
+      }
+      .description {
+        margin-bottom: -2.5rem;
+        margin-top: 2rem;
+      }
+      .comment-section {
+        width: 95%;
+        .comments {
+          margin-top: 3rem;
+          max-height: 10rem;
+          .comments-owner {
+            width: 100%;
+            height: 100%;
+            gap: 5px;
+            align-items: center;
+            justify-content: flex-start;
+
+            .owner-info {
+              gap: 40px;
+              p {
+                font-size: 0.8rem;
+                color: whitesmoke;
+              }
+            }
+          }
+        }
+        .comment {
+          .commentContent {
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+        .icons {
+          .icon {
+            img {
+              width: 15px;
+              height: 15px;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 100px) and (max-width: 899px) {
+  .Video {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .video-section {
+      width: 100vw;
+      padding: 10px 4px;
+      iframe {
+        width: 100%;
+        height: 30vh;
+        border-radius: 5px;
+      }
+      h2 {
+        font-size: 1.2rem;
+        padding: 2px;
+      }
+      .info {
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-around;
+        .space {
+          width: 0;
+        }
+        .video-info {
+          p {
+            font-size: 0.9rem;
+          }
+        }
+        .icons-section {
+          gap: 5px;
+          .likes-icons {
+            width: 80px;
+            height: 30px;
+            gap: 15px;
+            .icon {
+              gap: 0;
+              margin-left: 0;
+              align-items: flex-end;
+              justify-content: center;
+
+              img {
+                width: 15px;
+                height: 15px;
+              }
+              p {
+                font-size: 0.9rem;
+              }
+            }
+            .line {
+              margin: 0 0 0 1rem;
+              height: 20px;
+            }
+          }
+          .icon {
+            &.share,
+            &.save {
+              width: 60px;
+              img {
+                width: 15px;
+                height: 15px;
+              }
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+      .channel-info {
+        align-items: center;
+        justify-content: space-evenly;
+
+        .space {
+          width: 0;
+        }
+        .subs-btn {
+          padding: 0;
+          margin-left: -3rem;
+          button {
+            padding: 8px 10px;
+            font-size: 1rem;
+          }
+        }
+      }
+      .description {
+        margin-bottom: -2.5rem;
+        margin-top: 2rem;
+      }
+      .comment-section {
+        width: 95%;
+        .comments {
+          margin-top: 3rem;
+          max-height: 10rem;
+          .comments-owner {
+            width: 100%;
+            height: 100%;
+            gap: 5px;
+            align-items: center;
+            justify-content: flex-start;
+
+            .owner-info {
+              gap: 40px;
+              p {
+                font-size: 0.8rem;
+                color: whitesmoke;
+              }
+            }
+          }
+        }
+        .comment {
+          .commentContent {
+            margin-top: 5px;
+            margin-bottom: 5px;
+          }
+        }
+        .icons {
+          .icon {
+            img {
+              width: 15px;
+              height: 15px;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .Video {
+    .video-section {
+      iframe {
+        height: 60vh;
+      }
+      h2 {
+      }
+      .info {
+        .space {
+          width: 23%;
+        }
+        .video-info {
+          p {
+            font-size: 1.1rem;
+          }
+        }
+        .icons-section {
+          gap: 10px;
+          .likes-icons {
+            width: 100px;
+
+            gap: 20px;
+            .icon {
+              img {
+                width: 20px;
+                height: 20px;
+              }
+              p {
+                font-size: 0.9rem;
+              }
+            }
+          }
+          .icon {
+            &.share,
+            &.save {
+              width: 80px;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+      .channel-info {
+        .space {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

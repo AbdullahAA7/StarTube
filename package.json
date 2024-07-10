@@ -1,0 +1,11 @@
+{
+  "name": "startube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd app && npm run dev"
+  },
+  "author": "",
+  "license": "ISC"
+}

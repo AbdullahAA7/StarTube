@@ -1,0 +1,247 @@
+.Channel {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  .channel-details {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+
+    .banner-img {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 94%;
+        height: 180px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+    .channel {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 20px;
+      padding: 10px 60px;
+      .channel-img {
+        width: 150px;
+        height: 150px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      .channel-info {
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        h2 {
+          font-size: 2.3rem;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+        h4 {
+          color: rgba(255, 255, 255, 0.77);
+          font-size: 1.1rem;
+        }
+        p {
+          color: rgb(176, 176, 176);
+
+          span {
+            font-size: 1.3rem;
+            color: white;
+          }
+        }
+        button {
+          width: 120px;
+          height: 30px;
+          outline: none;
+          border: none;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.1rem;
+          font-weight: 800;
+          background-color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .navbar {
+    width: 100%;
+    height: 40px;
+    padding: 10px 50px;
+    cursor: pointer;
+    .links {
+      height: 45px;
+      display: flex;
+      flex-direction: column;
+      text-align: end;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 3px;
+      h3 {
+        font-size: 1.3rem;
+        height: 30px;
+        margin-top: 18px;
+        color: rgba(255, 255, 255, 0.818);
+      }
+      .line {
+        width: 58px;
+        height: 3px;
+        background-color: rgba(226, 225, 225, 0.861);
+        border-radius: 50px;
+      }
+    }
+  }
+
+  .sep-line {
+    height: 1px;
+    width: 94%;
+    margin-left: 3%;
+    background-color: rgba(152, 149, 149, 0.665);
+  }
+  .videos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    grid-gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .video {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 5px;
+      text-decoration: none;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      h3 {
+        width: 100%;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 499px) {
+  .Channel {
+    .channel-details {
+      .banner-img {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100px;
+        }
+      }
+      .channel {
+        padding: 10px;
+        margin-top: 2rem;
+        .channel-img {
+          width: 250px;
+          height: 90px;
+        }
+        .channel-info {
+          h2 {
+            font-size: 1.5rem;
+          }
+          h4 {
+            font-size: 0.8rem;
+          }
+          p {
+            span {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .videos {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .Channel {
+    .channel-details {
+      .banner-img {
+        img {
+          width: 100%;
+          height: 100px;
+        }
+      }
+      .channel {
+        padding: 30px;
+        margin-top: 1rem;
+        .channel-img {
+          width: 200px;
+          height: 150px;
+        }
+        .channel-info {
+          h2 {
+            font-size: 2rem;
+          }
+          h4 {
+            font-size: 1rem;
+          }
+          p {
+            span {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+    .videos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 731px) and (max-width: 1000px) {
+  .Channel {
+    .channel-details {
+      .channel {
+        margin-top: 2rem;
+        .channel-img {
+          width: 200px;
+          height: 150px;
+        }
+        .channel-info {
+          h2 {
+            font-size: 2rem;
+          }
+          h4 {
+            font-size: 1rem;
+          }
+          p {
+            span {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+    .videos {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

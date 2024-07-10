@@ -1,0 +1,70 @@
+.Recommanded {
+  width: 30%;
+  max-height: 100%;
+  padding: 20px 20px 0 0;
+  display: flex;
+  flex-direction: column;
+
+  .Recommanded-videos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .videos {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 10px;
+      object-fit: cover;
+      text-decoration: none;
+      .video {
+        display: flex;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 180px;
+          height: 110px;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+      }
+      .video-info {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 800;
+          color: whitesmoke;
+        }
+        .channel-link {
+          text-decoration: none;
+          h4 {
+            color: rgba(205, 202, 202, 0.706);
+
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 100px) and (max-width: 750px) {
+  .Recommanded {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1200px) {
+  .Recommanded {
+    width: 30%;
+    padding: 0;
+  }
+}
